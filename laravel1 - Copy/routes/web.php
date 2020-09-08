@@ -12,6 +12,3 @@
 	Route::get('/','indexController@index');
 	Route::get('/index','indexController@index');	
 	Route::get('/welcome','indexController@welcome');
-	
-	
-	Route::get('article/{id}','indexController@article');

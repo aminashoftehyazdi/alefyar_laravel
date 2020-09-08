@@ -53,8 +53,6 @@
 		</style>
 	</head>
     <body>
-		<div class="title m-b-md">
-			Firsti
-		</div>
+        injaa index ast
 	</body>
 </html>

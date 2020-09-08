@@ -3,17 +3,16 @@
 	use Illuminate\Http\Request;
 	class indexController extends Controller
 	{
-		public function welcome(){			
+		public function index(){
+			$wordA = 'متن آزمایشی';
+			$wordB = 'نوشته امتحانی';
+			return view('index')->with('someText1',$wordA)->with('someText2',$wordB);
+		}
+		public function welcome(){
 			return view('welcome');
 		}
-		public function avvali(){
-			return view('firsti');
+		
+		public function article($id) {
+			return view('article',compact('id'));
 		}
-		public function index(){			
-			return 'injaa index ast';
-		}
-		public function harchi(){
-			$someResult = rand(1,1000);
-			return 'injaa harchi ast : ' . $someResult;
-		}
-	}					
+	}				

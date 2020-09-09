@@ -9,9 +9,11 @@
 		| contains the "web" middleware group. Now create something great!
 		|
 	*/
-	Route::get('/','indexController@index');
-	Route::get('/index','indexController@index');	
-	Route::get('/welcome','indexController@welcome');
+	Route::get('/','HomeController@welcome');
+	Route::get('/home','HomeController@welcome');
+	Route::get('/posts','PostController@index');
+	Route::get('/orders','OrderController@index');
+	Route::get('/test','TestController@simpleShow');
 	
 	
-	Route::get('article/{id}','indexController@article');
+	

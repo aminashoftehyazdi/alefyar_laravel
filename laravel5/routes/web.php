@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('front.index');
 });
+
+Route::get('/admin', function () {
+    return view('back.index');
+});
